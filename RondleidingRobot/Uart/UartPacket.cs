@@ -23,5 +23,32 @@ namespace RondleidingRobot.Uart
             pakket[pakket.Length - 1] = (char)3;
             return pakket;
         }
+
+        public static bool Destruct(char[] package, out char cmd, out char[] args) 
+        {
+            int teller = 0;
+            args = new char[package.Length-5];
+            if (package[teller++] == (char)2) 
+            {
+                int crc = 0;
+                int len = (int)package[teller++];
+                cmd = package[teller++];
+                crc += (int)cmd;
+                for (int i = 0; i < len - 1; i++) 
+                {
+                    crc += (int)package[teller];
+                    args[i] = package[teller++];
+                }
+                if (package[teller++] == (char)(crc % 255)) 
+                {
+                    if (package[teller] == (char)3) 
+                    {
+                        return true;
+                    }
+                }
+            }
+            cmd = '0';
+            return false;
+        }
     }
 }
