@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects 2021\\RondleidingRobot\\RondleidingRobot\\TransdisciplinairProjectRobot\\RondleidingRobotTest\\RondleidingRobotTest.csproj": {}
+    "C:\\Users\\Robbe\\Documents\\3de jaar professionele bachelor ICT\\Semester 1\\TransdisciplinairProjectRobot\\RondleidingRobotTest\\RondleidingRobotTest.csproj": {}
   },
   "projects": {
-    "D:\\projects 2021\\RondleidingRobot\\RondleidingRobot\\TransdisciplinairProjectRobot\\RondleidingRobotTest\\RondleidingRobotTest.csproj": {
+    "C:\\Users\\Robbe\\Documents\\3de jaar professionele bachelor ICT\\Semester 1\\TransdisciplinairProjectRobot\\RondleidingRobotTest\\RondleidingRobotTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects 2021\\RondleidingRobot\\RondleidingRobot\\TransdisciplinairProjectRobot\\RondleidingRobotTest\\RondleidingRobotTest.csproj",
+        "projectUniqueName": "C:\\Users\\Robbe\\Documents\\3de jaar professionele bachelor ICT\\Semester 1\\TransdisciplinairProjectRobot\\RondleidingRobotTest\\RondleidingRobotTest.csproj",
         "projectName": "RondleidingRobotTest",
-        "projectPath": "D:\\projects 2021\\RondleidingRobot\\RondleidingRobot\\TransdisciplinairProjectRobot\\RondleidingRobotTest\\RondleidingRobotTest.csproj",
-        "packagesPath": "C:\\Users\\jorne\\.nuget\\packages\\",
-        "outputPath": "D:\\projects 2021\\RondleidingRobot\\RondleidingRobot\\TransdisciplinairProjectRobot\\RondleidingRobotTest\\obj\\",
+        "projectPath": "C:\\Users\\Robbe\\Documents\\3de jaar professionele bachelor ICT\\Semester 1\\TransdisciplinairProjectRobot\\RondleidingRobotTest\\RondleidingRobotTest.csproj",
+        "packagesPath": "C:\\Users\\Robbe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Robbe\\Documents\\3de jaar professionele bachelor ICT\\Semester 1\\TransdisciplinairProjectRobot\\RondleidingRobotTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\jorne\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Robbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -34,8 +33,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\projects 2021\\RondleidingRobot\\RondleidingRobot\\TransdisciplinairProjectRobot\\RondleidingRobot\\RondleidingRobot.csproj": {
-                "projectPath": "D:\\projects 2021\\RondleidingRobot\\RondleidingRobot\\TransdisciplinairProjectRobot\\RondleidingRobot\\RondleidingRobot.csproj"
+              "C:\\Users\\Robbe\\Documents\\3de jaar professionele bachelor ICT\\Semester 1\\TransdisciplinairProjectRobot\\RondleidingRobot\\RondleidingRobot.csproj": {
+                "projectPath": "C:\\Users\\Robbe\\Documents\\3de jaar professionele bachelor ICT\\Semester 1\\TransdisciplinairProjectRobot\\RondleidingRobot\\RondleidingRobot.csproj"
               }
             }
           }
@@ -82,26 +81,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\projects 2021\\RondleidingRobot\\RondleidingRobot\\TransdisciplinairProjectRobot\\RondleidingRobot\\RondleidingRobot.csproj": {
+    "C:\\Users\\Robbe\\Documents\\3de jaar professionele bachelor ICT\\Semester 1\\TransdisciplinairProjectRobot\\RondleidingRobot\\RondleidingRobot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects 2021\\RondleidingRobot\\RondleidingRobot\\TransdisciplinairProjectRobot\\RondleidingRobot\\RondleidingRobot.csproj",
+        "projectUniqueName": "C:\\Users\\Robbe\\Documents\\3de jaar professionele bachelor ICT\\Semester 1\\TransdisciplinairProjectRobot\\RondleidingRobot\\RondleidingRobot.csproj",
         "projectName": "RondleidingRobot",
-        "projectPath": "D:\\projects 2021\\RondleidingRobot\\RondleidingRobot\\TransdisciplinairProjectRobot\\RondleidingRobot\\RondleidingRobot.csproj",
-        "packagesPath": "C:\\Users\\jorne\\.nuget\\packages\\",
-        "outputPath": "D:\\projects 2021\\RondleidingRobot\\RondleidingRobot\\TransdisciplinairProjectRobot\\RondleidingRobot\\obj\\",
+        "projectPath": "C:\\Users\\Robbe\\Documents\\3de jaar professionele bachelor ICT\\Semester 1\\TransdisciplinairProjectRobot\\RondleidingRobot\\RondleidingRobot.csproj",
+        "packagesPath": "C:\\Users\\Robbe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Robbe\\Documents\\3de jaar professionele bachelor ICT\\Semester 1\\TransdisciplinairProjectRobot\\RondleidingRobot\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\jorne\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Robbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -142,7 +140,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
