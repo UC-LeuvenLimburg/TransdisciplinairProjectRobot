@@ -200,3 +200,4 @@ D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotTest\obj\Debug\netcoreapp3.1\RondleidingRobotTest.dll
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotTest\obj\Debug\netcoreapp3.1\RondleidingRobotTest.pdb
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotTest\obj\Debug\netcoreapp3.1\RondleidingRobotTest.genruntimeconfig.cache
+D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotTest\bin\Debug\netcoreapp3.1\RJCP.SerialPortStream.dll

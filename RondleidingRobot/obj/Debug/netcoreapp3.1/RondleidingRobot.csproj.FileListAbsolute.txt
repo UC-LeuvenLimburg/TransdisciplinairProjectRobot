@@ -26,3 +26,18 @@ D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\obj\Debug\netcoreapp3.1\RondleidingRobot.dll
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\obj\Debug\netcoreapp3.1\RondleidingRobot.pdb
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\obj\Debug\netcoreapp3.1\RondleidingRobot.genruntimeconfig.cache
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobot\bin\Debug\netcoreapp3.1\RondleidingRobot.exe
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobot\bin\Debug\netcoreapp3.1\RondleidingRobot.deps.json
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobot\bin\Debug\netcoreapp3.1\RondleidingRobot.runtimeconfig.json
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobot\bin\Debug\netcoreapp3.1\RondleidingRobot.runtimeconfig.dev.json
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobot\bin\Debug\netcoreapp3.1\RondleidingRobot.dll
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobot\bin\Debug\netcoreapp3.1\RondleidingRobot.pdb
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobot\obj\Debug\netcoreapp3.1\RondleidingRobot.csprojAssemblyReference.cache
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobot\obj\Debug\netcoreapp3.1\RondleidingRobot.AssemblyInfoInputs.cache
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobot\obj\Debug\netcoreapp3.1\RondleidingRobot.AssemblyInfo.cs
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobot\obj\Debug\netcoreapp3.1\RondleidingRobot.csproj.CoreCompileInputs.cache
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobot\obj\Debug\netcoreapp3.1\RondleidingRobot.dll
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobot\obj\Debug\netcoreapp3.1\RondleidingRobot.pdb
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobot\obj\Debug\netcoreapp3.1\RondleidingRobot.genruntimeconfig.cache
+D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\obj\Debug\netcoreapp3.1\RondleidingRobot.csproj.CopyComplete
+D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\bin\Debug\netcoreapp3.1\RJCP.SerialPortStream.dll

@@ -52,3 +52,30 @@ D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\RondleidingRobotWPF.dll
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\RondleidingRobotWPF.pdb
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\RondleidingRobotWPF.genruntimeconfig.cache
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\RondleidingRobot.deps.json
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\RondleidingRobot.runtimeconfig.json
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\RondleidingRobot.runtimeconfig.dev.json
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\RondleidingRobot.exe
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\RondleidingRobotWPF.exe
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\RondleidingRobotWPF.deps.json
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\RondleidingRobotWPF.runtimeconfig.json
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\RondleidingRobotWPF.runtimeconfig.dev.json
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\RondleidingRobotWPF.dll
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\RondleidingRobotWPF.pdb
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\RondleidingRobot.dll
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\RondleidingRobot.pdb
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\RondleidingRobotWPF.csprojAssemblyReference.cache
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\RondleidingRobotWPF_MarkupCompile.cache
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\RondleidingRobotWPF_MarkupCompile.lref
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\RondleidingRobotWPF.g.resources
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\RondleidingRobotWPF.AssemblyInfoInputs.cache
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\RondleidingRobotWPF.AssemblyInfo.cs
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\RondleidingRobotWPF.csproj.CoreCompileInputs.cache
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\RondleidingRobotWPF.csproj.CopyComplete
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\RondleidingRobotWPF.dll
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\RondleidingRobotWPF.pdb
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\RondleidingRobotWPF.genruntimeconfig.cache
+D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\RJCP.SerialPortStream.dll
