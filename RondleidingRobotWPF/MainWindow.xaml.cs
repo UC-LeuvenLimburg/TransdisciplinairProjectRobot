@@ -78,6 +78,7 @@ namespace RondleidingRobotWPF
         private void stopButton_Click(object sender, RoutedEventArgs e)
         {
             moveTimer.Stop();
+            updateTimer.Stop();
         }
 
         private void moveTimer_Tick(object sender, EventArgs e)
