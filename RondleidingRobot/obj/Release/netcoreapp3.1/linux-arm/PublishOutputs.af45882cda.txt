@@ -7,6 +7,7 @@ D:\publishLinux\Microsoft.CSharp.dll
 D:\publishLinux\Microsoft.VisualBasic.Core.dll
 D:\publishLinux\Microsoft.VisualBasic.dll
 D:\publishLinux\Microsoft.Win32.Primitives.dll
+D:\publishLinux\Microsoft.Win32.Registry.dll
 D:\publishLinux\System.AppContext.dll
 D:\publishLinux\System.Buffers.dll
 D:\publishLinux\System.Collections.Concurrent.dll
@@ -116,6 +117,7 @@ D:\publishLinux\System.Runtime.Serialization.dll
 D:\publishLinux\System.Runtime.WindowsRuntime.UI.Xaml.dll
 D:\publishLinux\System.Runtime.WindowsRuntime.dll
 D:\publishLinux\System.Runtime.dll
+D:\publishLinux\System.Security.AccessControl.dll
 D:\publishLinux\System.Security.Claims.dll
 D:\publishLinux\System.Security.Cryptography.Algorithms.dll
 D:\publishLinux\System.Security.Cryptography.Cng.dll
@@ -124,6 +126,7 @@ D:\publishLinux\System.Security.Cryptography.Encoding.dll
 D:\publishLinux\System.Security.Cryptography.OpenSsl.dll
 D:\publishLinux\System.Security.Cryptography.Primitives.dll
 D:\publishLinux\System.Security.Cryptography.X509Certificates.dll
+D:\publishLinux\System.Security.Principal.Windows.dll
 D:\publishLinux\System.Security.Principal.dll
 D:\publishLinux\System.Security.SecureString.dll
 D:\publishLinux\System.Security.dll
@@ -186,9 +189,4 @@ D:\publishLinux\libhostfxr.so
 D:\publishLinux\libhostpolicy.so
 D:\publishLinux\libmscordaccore.so
 D:\publishLinux\libmscordbi.so
-D:\publishLinux\Microsoft.Win32.Registry.dll
 D:\publishLinux\RJCP.SerialPortStream.dll
-D:\publishLinux\System.IO.Ports.dll
-D:\publishLinux\System.Security.AccessControl.dll
-D:\publishLinux\System.Security.Principal.Windows.dll
-D:\publishLinux\libSystem.IO.Ports.Native.so

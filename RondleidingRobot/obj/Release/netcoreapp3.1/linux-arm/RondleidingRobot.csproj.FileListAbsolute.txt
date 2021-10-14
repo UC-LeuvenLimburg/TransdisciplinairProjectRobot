@@ -5,10 +5,8 @@ D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\bin\Release\netcoreapp3.1\linux-arm\RondleidingRobot.dll
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\bin\Release\netcoreapp3.1\linux-arm\RondleidingRobot.pdb
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\bin\Release\netcoreapp3.1\linux-arm\Microsoft.Win32.Registry.dll
-D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\bin\Release\netcoreapp3.1\linux-arm\System.IO.Ports.dll
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\bin\Release\netcoreapp3.1\linux-arm\System.Security.AccessControl.dll
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\bin\Release\netcoreapp3.1\linux-arm\System.Security.Principal.Windows.dll
-D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\bin\Release\netcoreapp3.1\linux-arm\libSystem.IO.Ports.Native.so
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\obj\Release\netcoreapp3.1\linux-arm\RondleidingRobot.GeneratedMSBuildEditorConfig.editorconfig
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\obj\Release\netcoreapp3.1\linux-arm\RondleidingRobot.AssemblyInfoInputs.cache
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\obj\Release\netcoreapp3.1\linux-arm\RondleidingRobot.AssemblyInfo.cs

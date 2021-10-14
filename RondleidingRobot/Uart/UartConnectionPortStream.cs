@@ -6,11 +6,13 @@ using RJCP.IO.Ports;
 
 namespace RondleidingRobot.Uart
 {
-    class UartConnectionWindowsIOT : IUartConnection
+    class UartConnectionPortStream : IUartConnection
     {
         private SerialPortStream myPort;
 
-        public UartConnectionWindowsIOT(string port)
+
+
+        public UartConnectionPortStream(string port)
         {
             Thread readThread = new Thread(Read);
             myPort = new SerialPortStream(port, 9600, 8, Parity.None, StopBits.One);
