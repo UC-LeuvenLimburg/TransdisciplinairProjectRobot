@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -11,20 +11,17 @@ namespace RondleidingRobotWPF.Models
     public class Robot : Sprite
     {
         private Ellipse ellipse;
-        private int stepSize;
-
-        Random rnd = new Random();
 
         public Robot(Canvas drawingCanvas) : base(drawingCanvas)
         {
             ellipse = new Ellipse();
             ellipse.Fill = new SolidColorBrush(Colors.Black);
 
-            X = Convert.ToInt32(canvas.Width) / 2;
-            Y = Convert.ToInt32(canvas.Height) / 2;
+            X = Convert.ToInt32(drawingCanvas.Width) / 2;
+            Y = Convert.ToInt32(drawingCanvas.Height) / 2;
+
             Width = 15;
-            Height = 15;
-            stepSize = 15;
+            Height = 25;
 
             canvas.Children.Add(ellipse);
         }
@@ -36,27 +33,34 @@ namespace RondleidingRobotWPF.Models
             ellipse.Height = Height;
         }
 
-        public void Move()
+        public void Move(Beweging beweging)
         {
-            int num = rnd.Next(4);
-            switch (num)
-            {
-                case 0:
-                    X = X - stepSize;
-                    break;
+                switch (Convert.ToString(beweging.Richting))
+                {
+                    case "links": //Naar links
+                        X = X - beweging.Afstand; 
+                        Width = 25;
+                        Height = 15;
+                        break;
 
-                case 1:
-                    X = X + stepSize;
-                    break;
+                    case "rechts": //Naar rechts
+                        X = X + beweging.Afstand;
+                        Width = 25;
+                        Height = 15;
+                        break;
 
-                case 2:
-                    Y = Y - stepSize;
-                    break;
+                    case "vooruit": //Naar voor
+                        Y = Y - beweging.Afstand;
+                        Width = 15;
+                        Height = 25;
+                        break;
 
-                case 3:
-                    Y = Y + stepSize;
-                    break;
+                    case "achteruit": //Naar achter
+                        Y = Y + beweging.Afstand;
+                        Width = 15;
+                        Height = 25;
+                        break;
+                }
             }
         }
     }
-}

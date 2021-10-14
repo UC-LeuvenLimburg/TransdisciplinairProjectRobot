@@ -15,6 +15,13 @@ namespace RondleidingRobotWPF.Models
             canvas = drawingCanvas;
         }
 
+        public Sprite(Canvas drawingCanvas, int x, int y)
+        {
+            canvas = drawingCanvas;
+            this.x = x;
+            this.y = y;
+        }
+
         public int X
         {
             get
@@ -66,7 +73,6 @@ namespace RondleidingRobotWPF.Models
                 UpdateElement();
             }
         }
-
         protected abstract void UpdateElement();
     }
 }
