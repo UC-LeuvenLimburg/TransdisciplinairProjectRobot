@@ -8,7 +8,8 @@ namespace RondleidingRobotWPF.Models
     public abstract class Sprite
     {
         protected Canvas canvas;
-        private int x, y, width, height;
+        private float x, y;
+        private int width, height;
 
         public Sprite(Canvas drawingCanvas)
         {
@@ -22,7 +23,7 @@ namespace RondleidingRobotWPF.Models
             this.y = y;
         }
 
-        public int X
+        public float X
         {
             get
             {
@@ -35,7 +36,7 @@ namespace RondleidingRobotWPF.Models
             }
         }
 
-        public int Y
+        public float Y
         {
             get
             {

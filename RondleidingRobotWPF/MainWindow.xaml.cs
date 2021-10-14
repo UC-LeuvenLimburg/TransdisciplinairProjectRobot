@@ -24,6 +24,7 @@ namespace RondleidingRobotWPF
         private Robot robot;
         List<Beweging> movementList = new List<Beweging>();
         private DispatcherTimer moveTimer;
+        private DispatcherTimer updateTimer;
 
         public MainWindow()
         {
@@ -34,6 +35,10 @@ namespace RondleidingRobotWPF
             moveTimer = new DispatcherTimer();
             moveTimer.Interval = TimeSpan.FromMilliseconds(1000);
             moveTimer.Tick += moveTimer_Tick;
+
+            updateTimer = new DispatcherTimer();
+            updateTimer.Interval = TimeSpan.FromMilliseconds(20);
+            updateTimer.Tick += updateTimer_Tick;
         }
 
         public List<Beweging> readMovement()
@@ -55,7 +60,7 @@ namespace RondleidingRobotWPF
                 columns = row.Split(separators);
                 beweging = new Beweging();
                 beweging.Richting = Convert.ToString(columns[0]);
-                beweging.Afstand = Convert.ToInt32(columns[1]);
+                beweging.Tijd = Convert.ToString(columns[1]);
                 movementList.Add(beweging);
                 row = reader.ReadLine();
             }
@@ -67,6 +72,7 @@ namespace RondleidingRobotWPF
         {
             readMovement();
             moveTimer.Start();
+            updateTimer.Start();
         }
 
         private void stopButton_Click(object sender, RoutedEventArgs e)
@@ -78,10 +84,14 @@ namespace RondleidingRobotWPF
         {
             if (movementList.Count() != 0)
             { 
-                robot.Move(movementList.First());
-                movementList.Remove(movementList.First());
+                robot.Destination(movementList.First());
+                movementList.Remove(movementList.First());           
             }
-            
+        }
+
+        private void updateTimer_Tick(object sender, EventArgs e)
+        {
+                robot.Move();
         }
     }
 }
