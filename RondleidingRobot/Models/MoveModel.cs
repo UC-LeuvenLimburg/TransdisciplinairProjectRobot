@@ -10,7 +10,7 @@ namespace RondleidingRobot.Models
 {
     public class MoveModel
     {
-        List<String> movementList = new List<String>();
+        List<string> movementList = new List<string>();
         private string currentCommand = "";
         private System.Timers.Timer moveTimer;
         private System.Timers.Timer updateTimer;

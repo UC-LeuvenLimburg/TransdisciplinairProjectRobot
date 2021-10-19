@@ -79,3 +79,4 @@ C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\Transdis
 C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\RondleidingRobotWPF.pdb
 C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\RondleidingRobotWPF.genruntimeconfig.cache
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\RJCP.SerialPortStream.dll
+C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\RJCP.SerialPortStream.dll

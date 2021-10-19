@@ -1203,14 +1203,6 @@
         "runtime": {
           "RondleidingRobot.dll": {}
         }
-      },
-      "System.IO.Ports/5.0.0.0": {
-        "runtime": {
-          "System.IO.Ports.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.421.11614"
-          }
-        }
       }
     }
   },
@@ -1901,11 +1893,6 @@
     },
     "RondleidingRobot/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.IO.Ports/5.0.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

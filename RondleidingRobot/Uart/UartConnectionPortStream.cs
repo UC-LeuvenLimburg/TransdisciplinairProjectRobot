@@ -10,8 +10,6 @@ namespace RondleidingRobot.Uart
     {
         private SerialPortStream myPort;
 
-
-
         public UartConnectionPortStream(string port)
         {
             Thread readThread = new Thread(Read);
