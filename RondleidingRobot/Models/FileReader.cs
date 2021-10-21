@@ -18,14 +18,12 @@ namespace RondleidingRobot.Models
             StreamReader reader = File.OpenText(filePath);
 
             string row;
-            string[] columns;
-            char[] separators = { ':' };
+            
 
             row = reader.ReadLine();
             while (row != null)
             {
-                columns = row.Split(separators);
-                beweging = Convert.ToString(columns[0]);
+                beweging = Convert.ToString(row);
                 movementList.Add(beweging);
                 row = reader.ReadLine();
             }
