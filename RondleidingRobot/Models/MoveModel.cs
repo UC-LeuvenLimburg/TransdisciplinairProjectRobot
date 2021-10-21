@@ -14,7 +14,7 @@ namespace RondleidingRobot.Models
         private string currentCommand = "";
         private System.Timers.Timer moveTimer;
         private System.Timers.Timer updateTimer;
-        private IUartConnection moveConnection;
+        private IOutput moveConnection;
 
         public MoveModel(string[] args)
         {
@@ -24,9 +24,9 @@ namespace RondleidingRobot.Models
             updateTimer = new System.Timers.Timer(1000);
             updateTimer.Elapsed += UpdateTimer_Elapsed;
 
-            readMovement();
-            moveConnection = new UartConnectionPortStream(args[0]);
-            moveConnection.messageReceived += MoveConnection_messageReceived;
+            movementList = FileReader.ReadMovement();
+            moveConnection = new UartOutput(args[0]);
+            moveConnection.inputEvent += MoveConnection_messageReceived;
 
             Thread.Sleep(2000);
             updateTimer.Start();
@@ -38,30 +38,7 @@ namespace RondleidingRobot.Models
             Console.WriteLine(s);
         }
 
-        private List<string> readMovement()
-        {
-            string beweging;
-
-            string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            string filePath = System.IO.Path.Combine(folderPath, "bewegingen robot.txt");
-
-            StreamReader reader = File.OpenText(filePath);
-
-            string row;
-            string[] columns;
-            char[] separators = { ':' };
-
-            row = reader.ReadLine();
-            while (row != null)
-            {
-                columns = row.Split(separators);
-                beweging = Convert.ToString(columns[0]);
-                movementList.Add(beweging);
-                row = reader.ReadLine();
-            }
-            reader.Close();
-            return movementList;
-        }
+        
 
         private void UpdateTimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
@@ -75,7 +52,7 @@ namespace RondleidingRobot.Models
         private void MoveTimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
             string command = RobotAI.Move(currentCommand);
-            moveConnection.Send(command);
+            moveConnection.Output(command);
         }
     }
 }
