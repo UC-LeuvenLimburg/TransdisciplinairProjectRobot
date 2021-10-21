@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gQlfVWdUjU0ZCR46t5sesMNYpdPK6VkrHn/N0InhM5itHnI3g8DxqgmxWh6Biq5Enma5KGdWW1NbI+EGPdGunA==",
+  "dgSpecHash": "AKDwsPsKpL7wrhgzmQAeqdIUX1G4jPa5g7pOXZwRnE7E5tAhkwlRkhhzfzD9SPdSJZBKE5NIeGppBmmUEbixug==",
   "success": true,
   "projectFilePath": "D:\\projects 2021\\RondleidingRobot\\RondleidingRobot\\TransdisciplinairProjectRobot\\RondleidingRobot\\RondleidingRobot.csproj",
   "expectedPackageFiles": [
@@ -75,9 +75,9 @@
     "C:\\Users\\jorne\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\jorne\\.nuget\\packages\\system.threading.thread\\4.3.0\\system.threading.thread.4.3.0.nupkg.sha512",
     "C:\\Users\\jorne\\.nuget\\packages\\system.threading.threadpool\\4.3.0\\system.threading.threadpool.4.3.0.nupkg.sha512",
-    "C:\\Users\\jorne\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-arm\\3.1.19\\microsoft.netcore.app.runtime.linux-arm.3.1.19.nupkg.sha512",
-    "C:\\Users\\jorne\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-arm\\3.1.19\\microsoft.aspnetcore.app.runtime.linux-arm.3.1.19.nupkg.sha512",
-    "C:\\Users\\jorne\\.nuget\\packages\\microsoft.netcore.app.host.linux-arm\\3.1.19\\microsoft.netcore.app.host.linux-arm.3.1.19.nupkg.sha512"
+    "C:\\Users\\jorne\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-arm\\3.1.20\\microsoft.netcore.app.runtime.linux-arm.3.1.20.nupkg.sha512",
+    "C:\\Users\\jorne\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-arm\\3.1.20\\microsoft.aspnetcore.app.runtime.linux-arm.3.1.20.nupkg.sha512",
+    "C:\\Users\\jorne\\.nuget\\packages\\microsoft.netcore.app.host.linux-arm\\3.1.20\\microsoft.netcore.app.host.linux-arm.3.1.20.nupkg.sha512"
   ],
   "logs": []
 }

@@ -6,127 +6,78 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace RondleidingRobotWPF.Models
 {
     public class Robot : Sprite
     {
-        float xDest, yDest;
-        String currentCommand;
+        private const int StepSize = 150;
+
         private Ellipse ellipse;
+        private DispatcherTimer moveTimer;
+
+        public string Command { get; set; }
 
         public Robot(Canvas drawingCanvas) : base(drawingCanvas)
         {
+            Command = "X:0";
             ellipse = new Ellipse();
             ellipse.Fill = new SolidColorBrush(Colors.Black);
 
             X = Convert.ToInt32(drawingCanvas.Width) / 2;
             Y = Convert.ToInt32(drawingCanvas.Height) / 2;
-            xDest = X;
-            yDest = Y;
 
             Width = 15;
             Height = 25;
 
             canvas.Children.Add(ellipse);
+ 
+
+            moveTimer = new DispatcherTimer();
+            moveTimer.Interval = TimeSpan.FromMilliseconds(10);
+            moveTimer.Tick += MoveTimer_Tick;
+            moveTimer.Start();
+        }
+
+        private void MoveTimer_Tick(object sender, EventArgs e)
+        {
+            move();
         }
 
         protected override void UpdateElement()
         {
+            ellipse.RenderTransform = new RotateTransform(Angle , Width /2, Height/2);
             ellipse.Margin = new Thickness(X, Y, 0, 0);
             ellipse.Width = Width;
             ellipse.Height = Height;
-            
         }
 
-        public void Destination(Beweging beweging)
+        private void move() 
         {
-            switch (Convert.ToString(beweging.Richting))
+            string[] columns;
+            char[] separators = { ':' };
+            columns = Command.Split(separators);
+            string beweging = Convert.ToString(columns[0]);
+            int snelheid = Convert.ToInt32(columns[1]);
+
+            switch (beweging)
             {
-                case "links": //Naar links
-                    xDest = xDest - Convert.ToInt32(beweging.Tijd);
-                    Width = 25;
-                    Height = 15;
-                    currentCommand = "links";
+                case "A":
+                    Angle -= snelheid / StepSize;
                     break;
-
-                case "rechts": //Naar rechts
-                    xDest = xDest + Convert.ToInt32(beweging.Tijd);
-                    Width = 25;
-                    Height = 15;
-                    currentCommand = "rechts";
+                case "D":
+                    Angle += snelheid / StepSize;
                     break;
-
-                case "vooruit": //Naar voor
-                    yDest = yDest - Convert.ToInt32(beweging.Tijd);
-                    Width = 15;
-                    Height = 25;
-                    currentCommand = "vooruit";
+                case "W":
+                    X = X + snelheid * Math.Cos((Math.PI / 180) * Angle) / StepSize;
+                    Y = Y + snelheid * Math.Sin((Math.PI / 180) * Angle) / StepSize;
                     break;
-
-                case "achteruit": //Naar achter
-                    yDest = yDest + Convert.ToInt32(beweging.Tijd);
-                    Width = 15;
-                    Height = 25;
-                    currentCommand = "achteruit";
+                case "S":
+                    X = X - snelheid * Math.Cos((Math.PI / 180) * Angle) / StepSize;
+                    Y = Y - snelheid * Math.Sin((Math.PI / 180) * Angle) / StepSize;
                     break;
-            }
-        }
-        
-        public void Move()
-        {
-            switch (currentCommand)
-            {
-                case "links": //Naar links
-                    if (X > xDest + 1)
-                    {
-                        Debug.WriteLine("Links");
-                        X -= 1;
-                    }
-                    else
-                        X = xDest;
-                    Y = yDest;
-                    Width = 25;
-                    Height = 15;
-                    break;
-
-                case "rechts": //Naar rechts
-                    if (X < xDest - 1)
-                    {
-                        Debug.WriteLine("Rechts");
-                        X += 1;
-                    }
-                    else
-                        X = xDest;
-                    Y = yDest;
-                    Width = 25;
-                    Height = 15;
-                    break;
-
-                case "vooruit": //Naar voor
-                    if (Y > yDest + 1)
-                    {
-                        Debug.WriteLine("Vooruit");
-                        Y -= 1;
-                    }
-                    else
-                        Y = yDest;
-                    X = xDest;
-                    Width = 15;
-                    Height = 25;
-                    break;
-
-                case "achteruit": //Naar achter
-                    if (Y < yDest - 1)
-                    {
-                        Debug.WriteLine("Achteruit");
-                        Y += 1;
-                    }
-                    else
-                        Y = yDest;
-                    X = xDest;
-                    Width = 15;
-                    Height = 25;
+                default:
                     break;
             }
         }

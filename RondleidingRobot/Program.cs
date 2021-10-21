@@ -14,8 +14,12 @@ namespace RondleidingRobot
 
         public static void Main(string[] args)
         {
-            MoveModel model = new MoveModel(args);
+            //IOutput movementConnetion = new UartOutput(args[0]);
+            IOutput movementConnetion = new PrintOutput();
+            MoveModel model = new MoveModel(movementConnetion);
+            while (true)
+            { }
         }
-
+        
     }
 }

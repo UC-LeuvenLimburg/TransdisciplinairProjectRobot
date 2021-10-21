@@ -1,5 +1,9 @@
 
 .vs/RondleidingRobot/v16/TestStore/0/001.testlog
 .vs/RondleidingRobot/v16/TestStore/0/testlog.manifest
-*/obj*
-*/bin*
+*.cache
+*.cache
+*.cache
+*.lref
+*.json
+*.pdb
