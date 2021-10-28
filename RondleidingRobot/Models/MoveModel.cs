@@ -1,5 +1,4 @@
 ﻿using RondleidingRobot.Uart;
-using RondleidingRobotWPF.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,18 +8,20 @@ namespace RondleidingRobot.Models
 {
     public class MoveModel
     {
-        List<string> movementList = new List<string>();
+        List<Command> CommandList = new List<Command>();
         private System.Timers.Timer programClock;
-        private IOutput moveConnection;
+        private readonly IOutput moveConnection;
+        private readonly IOutput speakOutput;
 
-        public MoveModel(IOutput movementConnetion)
+        public MoveModel(IOutput movementConnetion, IOutput speakOutput)
         {
             programClock = new System.Timers.Timer(100);
             programClock.Elapsed += ProgramClock_Elapsed;
 
             this.moveConnection = movementConnetion;
+            this.speakOutput = speakOutput;
 
-            movementList = RobotAI.CalculateMovements(FileReader.ReadMovement());
+            CommandList = RobotAI.CalculateMovements(FileHelper.ReadMovement());
             moveConnection.inputEvent += MoveConnection_messageReceived;
 
             Thread.Sleep(2000);
@@ -29,11 +30,18 @@ namespace RondleidingRobot.Models
 
         private void ProgramClock_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
-            if (movementList.Count() != 0)
+            if (CommandList.Count() != 0)
             {
-                string currentCommand = movementList.First();
-                movementList.Remove(movementList.First());
-                moveConnection.Output(currentCommand);
+                Command currentCommand = CommandList.First();
+                CommandList.Remove(CommandList.First());
+                if (currentCommand.CommandString == "speak")
+                {
+                    speakOutput.Output(currentCommand.Arguments[0]);
+                }
+                else
+                {
+                    moveConnection.Output(currentCommand.ToString());
+                }
             }
         }
 
