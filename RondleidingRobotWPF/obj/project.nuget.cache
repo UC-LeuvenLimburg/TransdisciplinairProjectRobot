@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dpwmJEU0AFz8GeVlDYrsVYFjbEgMoh7PhbgKTbEtMSHBe1PCsjWzxEWhGyTj7iUWg4W4/KXc3Vu9kHyUt13/FQ==",
+  "dgSpecHash": "awaM0ZqS+B+bs/8W4JjFqwrN1Fvs9dILnZvUuXX23XhDkl2Xi0dROir0V8P189uPZ7yBx0VJUN6wxgDfz6JDwQ==",
   "success": true,
   "projectFilePath": "D:\\projects 2021\\RondleidingRobot\\RondleidingRobot\\TransdisciplinairProjectRobot\\RondleidingRobotWPF\\RondleidingRobotWPF.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jorne\\.nuget\\packages\\libvlcsharp\\3.6.1\\libvlcsharp.3.6.1.nupkg.sha512",
     "C:\\Users\\jorne\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\jorne\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\jorne\\.nuget\\packages\\microsoft.win32.registry\\4.3.0\\microsoft.win32.registry.4.3.0.nupkg.sha512",
@@ -43,7 +44,8 @@
     "C:\\Users\\jorne\\.nuget\\packages\\system.threading.overlapped\\4.3.0\\system.threading.overlapped.4.3.0.nupkg.sha512",
     "C:\\Users\\jorne\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\jorne\\.nuget\\packages\\system.threading.thread\\4.3.0\\system.threading.thread.4.3.0.nupkg.sha512",
-    "C:\\Users\\jorne\\.nuget\\packages\\system.threading.threadpool\\4.3.0\\system.threading.threadpool.4.3.0.nupkg.sha512"
+    "C:\\Users\\jorne\\.nuget\\packages\\system.threading.threadpool\\4.3.0\\system.threading.threadpool.4.3.0.nupkg.sha512",
+    "C:\\Users\\jorne\\.nuget\\packages\\videolan.libvlc.windows\\3.0.16\\videolan.libvlc.windows.3.0.16.nupkg.sha512"
   ],
   "logs": []
 }

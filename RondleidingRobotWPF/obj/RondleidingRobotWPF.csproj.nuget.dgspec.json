@@ -113,9 +113,17 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "LibVLCSharp": {
+              "target": "Package",
+              "version": "[3.6.1, )"
+            },
             "SerialPortStream": {
               "target": "Package",
               "version": "[2.3.1, )"
+            },
+            "VideoLAN.LibVLC.Windows": {
+              "target": "Package",
+              "version": "[3.0.16, )"
             }
           },
           "imports": [

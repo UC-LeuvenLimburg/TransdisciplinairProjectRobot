@@ -4,36 +4,48 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows;
 
-namespace RondleidingRobotWPF.Models
+namespace RondleidingRobot.Models
 {
     public abstract class RobotAI
     {
         private const int MAXSPEED = 255;
         private const int SPEEDSTEP = 30;
 
-        public static List<string> CalculateMovements(List<string> commands)
+        public static List<Command> CalculateMovements(List<string> commands)
         {
-            List<string> result = new List<string>();
+            List<Command> result = new List<Command>();
             foreach (string command in commands) 
             {
-                result.AddRange(CalculateMovement(command));
+                if (command.ToLower().Contains("speak"))
+                {
+                    string[] colums = command.Split(':');
+                    Command c = new Command();
+                    c.CommandString = "speak";
+                    c.Arguments = new List<string>();
+                    c.Arguments.Add(colums[1]);
+                    result.Add(c);
+                }
+                else
+                {
+                    result.AddRange(CalculateMovement(command));
+                }  
             }
             return result;
         }
 
-        private static List<string> CalculateMovement(string command)
+        private static List<Command> CalculateMovement(string command)
         {
             string[] columns;
             char[] separators = { ':' };
             columns = command.Split(separators);
             string beweging = Convert.ToString(columns[0]);
             int aantal = Convert.ToInt32(columns[1]);
-            List<string> result = new List<string>();
+            List<Command> result = new List<Command>();
 
             for (int i = 0; i < aantal; i++) 
             {
                 string decodedBeweging;
-                switch (beweging)
+                switch (beweging.ToLower())
                 {
                     case "links":
                         decodedBeweging = "A";
@@ -52,7 +64,7 @@ namespace RondleidingRobotWPF.Models
                         break;
                 }
 
-                int snelheid;
+                int snelheid = 0;
                 if (i < aantal / 2)
                 {
                     snelheid = SPEEDSTEP * i;
@@ -63,7 +75,11 @@ namespace RondleidingRobotWPF.Models
                 }
                 if (snelheid > MAXSPEED) snelheid = MAXSPEED;
                 if (snelheid < 0) snelheid = 0;
-                result.Add(decodedBeweging + ':' + snelheid);
+                Command c = new Command();
+                c.CommandString = decodedBeweging;
+                c.Arguments = new List<string>();
+                c.Arguments.Add(Convert.ToString(snelheid));
+                result.Add(c);
 
             }
             return result;
