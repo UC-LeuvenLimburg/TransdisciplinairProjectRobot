@@ -12,12 +12,12 @@ namespace RondleidingRobot.Models
             string beweging;
             List<string> movementList = new List<string>();
 
-            string filePath = getFileString("bewegingen robot.txt");
+            string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string filePath = Path.Combine(folderPath, "bewegingen robot.txt");
 
             StreamReader reader = File.OpenText(filePath);
 
             string row;
-            
 
             row = reader.ReadLine();
             while (row != null)

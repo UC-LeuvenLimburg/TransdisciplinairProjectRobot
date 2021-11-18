@@ -10,12 +10,18 @@ using System.Windows.Threading;
 
 namespace RondleidingRobotWPF.Models
 {
+    //1. declare a delegate type
+    public delegate void ObstacleSeenEvent(object sender, string input);
+
     public class Robot : Sprite
     {
         private const int StepSize = 150;
 
         private Ellipse ellipse;
         private DispatcherTimer moveTimer;
+
+        //3. declare a delegate object (event)
+        public event ObstacleSeenEvent ObstacleSeen;
 
         public string Command { get; set; }
 
@@ -38,6 +44,34 @@ namespace RondleidingRobotWPF.Models
             moveTimer.Interval = TimeSpan.FromMilliseconds(10);
             moveTimer.Tick += MoveTimer_Tick;
             moveTimer.Start();
+
+            ObstacleSeenEvent.Invoke(this, "input");
+        }
+
+        public event ObstacleSeenEvent ObstacleSeenEvent;
+
+        private void OnObstacleSeen(string input)
+        {
+            //5. call the delegate (event)
+            //Hier zetten hoe er gekeken word of de robot iets ziet en dan het event oproepen.
+            if (X <= 10)
+            {
+                //Event oproepen
+                input = "rechts";
+            }
+            if (X >= 740)
+            {
+                input = "links";
+            }
+            if (Y <= 10)
+            {
+                input = "achteruit";
+            }
+            if (Y >= 390)
+            {
+                input = "vooruit";
+            }
+            ObstacleSeenEvent(this, input);
         }
 
         private void MoveTimer_Tick(object sender, EventArgs e)
