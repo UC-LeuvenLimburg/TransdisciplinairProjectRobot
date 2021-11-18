@@ -9,6 +9,5 @@ namespace RondleidingRobot.Models
     {
         public void Output(string output);
         public event InputEvent inputEvent;
-
     }
 }
