@@ -62,6 +62,7 @@ namespace RondleidingRobot.Models
 
         public int HoldDistance(int distance) 
         {
+            if (function == null) function = LinearRegression();
             if (sensorValues.Average() > distance + MARGIN && function.Slope <= 0) return -30;
             if (sensorValues.Average() < distance - MARGIN && function.Slope >= 0) return 30;
             return 0;
