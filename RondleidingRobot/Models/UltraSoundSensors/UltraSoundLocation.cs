@@ -18,7 +18,7 @@ namespace RondleidingRobot.Models
 
         public string HoldLeft(int distance, int speed) 
         {
-            if (speed > 225) speed = 225;
+            if (speed > 100) speed = 100;
             int leftmotor = speed + leftSensor.HoldDistance(distance);
             int rightmotor = speed;
             if (leftmotor < 0) leftmotor = 0;
@@ -28,7 +28,7 @@ namespace RondleidingRobot.Models
 
         public string HoldRight(int distance, int speed)
         {
-            if (speed > 225) speed = 225;
+            if (speed > 100) speed = 100;
             int leftmotor = speed;
             int rightmotor = speed + rightSensor.HoldDistance(distance);
             if (leftmotor < 0) leftmotor = 0;

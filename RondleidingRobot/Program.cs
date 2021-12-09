@@ -14,11 +14,11 @@ namespace RondleidingRobot
 
         public static void Main(string[] args)
         {
-            //IOutput movementConnetion = new UartOutput(args[0]);
+            IOutput movementConnetion = new UartOutput("/dev/ttyACM0");
             IOutput printOutput = new PrintOutput();
-            IOutput soundOutput = new SoundOutput();
+            //IOutput soundOutput = new SoundOutput();
 
-            MoveModel model = new MoveModel(printOutput, printOutput);
+            MoveModel model = new MoveModel(movementConnetion, printOutput);
             while (true)
             {
 
