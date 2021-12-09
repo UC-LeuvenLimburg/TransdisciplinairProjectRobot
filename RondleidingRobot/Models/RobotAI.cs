@@ -6,83 +6,78 @@ using System.Windows;
 
 namespace RondleidingRobot.Models
 {
-    public abstract class RobotAI
+    public delegate void AudioOutputEvent(object sender, string file);
+    public class RobotAI
     {
         private const int MAXSPEED = 255;
         private const int SPEEDSTEP = 30;
 
-        public static List<Command> CalculateMovements(List<string> commands)
+        public bool Carefull { get; set; }
+        public bool Stopped { get; set; }
+
+        private int speed;
+        private int distanceToGo;
+        private int listIndex;
+        private List<Command> commandList;
+
+        public AudioOutputEvent audioOutputEvent;
+
+        public RobotAI() 
         {
-            List<Command> result = new List<Command>();
-            foreach (string command in commands) 
+            commandList = new List<Command>();
+            List<string> commands = FileHelper.ReadMovement();
+            foreach (string command in commands)
             {
-                if (command.ToLower().Contains("speak"))
-                {
-                    string[] colums = command.Split(':');
-                    Command c = new Command();
-                    c.CommandString = "speak";
-                    c.Arguments = new List<string>();
-                    c.Arguments.Add(colums[1]);
-                    result.Add(c);
-                }
-                else
-                {
-                    result.AddRange(CalculateMovement(command));
-                }  
+                commandList.Add(new Command(command));
             }
-            return result;
+            listIndex = 0;
+            speed = 0;
+            distanceToGo = 0;
+            Carefull = false;
+            Stopped = false;
         }
 
-        private static List<Command> CalculateMovement(string command)
+        public Command Move() 
         {
-            string[] columns;
-            char[] separators = { ':' };
-            columns = command.Split(separators);
-            string beweging = Convert.ToString(columns[0]);
-            int aantal = Convert.ToInt32(columns[1]);
-            List<Command> result = new List<Command>();
-
-            for (int i = 0; i < aantal; i++) 
+            if (Stopped) return new Command("A", Convert.ToString(SPEEDSTEP));
+            if (distanceToGo < 0)
             {
-                string decodedBeweging;
-                switch (beweging.ToLower())
+                listIndex++;
+                if (listIndex >= commandList.Count) listIndex = 0;
+                try
                 {
-                    case "links":
-                        decodedBeweging = "A";
-                        break;
-                    case "rechts":
-                        decodedBeweging = "D";
-                        break;
-                    case "vooruit":
-                        decodedBeweging = "W";
-                        break;
-                    case "achteruit":
-                        decodedBeweging = "S";
-                        break;
-                    default:
-                        decodedBeweging = "X";
-                        break;
+                    distanceToGo = Convert.ToInt16(commandList[listIndex].Arguments[0]);
                 }
-
-                int snelheid = 0;
-                if (i < aantal / 2)
+                catch 
                 {
-                    snelheid = SPEEDSTEP * i;
+                    distanceToGo = 0;
                 }
-                else 
-                {
-                    snelheid = SPEEDSTEP * (aantal - i);                 
-                }
-                if (snelheid > MAXSPEED) snelheid = MAXSPEED;
-                if (snelheid < 0) snelheid = 0;
-                Command c = new Command();
-                c.CommandString = decodedBeweging;
-                c.Arguments = new List<string>();
-                c.Arguments.Add(Convert.ToString(snelheid));
-                result.Add(c);
 
             }
-            return result;
+            if (CheckIfSpecialOutput(commandList[listIndex]))
+            {
+                speed = 0;
+                distanceToGo--;
+                return new Command("X", "0");
+            }
+            if (speed >= distanceToGo * SPEEDSTEP) speed -= SPEEDSTEP;
+            else speed += SPEEDSTEP;
+            speed += (SPEEDSTEP - speed % SPEEDSTEP)%SPEEDSTEP;
+            if (speed > MAXSPEED) speed = MAXSPEED;
+            else if (speed < 0) speed = 0;
+            distanceToGo--;
+            if (commandList[listIndex].CommandString == "X") speed = 0;
+            return new Command(commandList[listIndex].CommandString, Convert.ToString(speed));
+        }
+
+        private bool CheckIfSpecialOutput(Command commandListItem) 
+        {
+            if (commandListItem.CommandString == "SPEAK") 
+            {
+                audioOutputEvent.Invoke(this, commandListItem.Arguments[0]);
+                return true;
+            }
+            return false;
         }
     }
 }

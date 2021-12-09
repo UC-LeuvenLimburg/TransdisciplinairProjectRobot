@@ -8,46 +8,64 @@ namespace RondleidingRobot.Models
 {
     public class MoveModel
     {
-        List<Command> CommandList = new List<Command>();
+        private RobotAI robotAI;
         private System.Timers.Timer programClock;
         private readonly IOutput moveConnection;
         private readonly IOutput speakOutput;
+        private readonly UltraSoundLocation utraSoundLocation;
 
         public MoveModel(IOutput movementConnetion, IOutput speakOutput)
         {
+            robotAI = new RobotAI();
+
             programClock = new System.Timers.Timer(100);
             programClock.Elapsed += ProgramClock_Elapsed;
+            utraSoundLocation = new UltraSoundLocation();
 
             this.moveConnection = movementConnetion;
             this.speakOutput = speakOutput;
 
-            CommandList = RobotAI.CalculateMovements(FileHelper.ReadMovement());
-            moveConnection.inputEvent += MoveConnection_messageReceived;
 
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
+            moveConnection.inputEvent += MoveConnection_messageReceived;
+            robotAI.audioOutputEvent += outputAudio;
             programClock.Start();
+        }
+
+        private void outputAudio(object sender, string file) 
+        {
+            speakOutput.Output(file);
         }
 
         private void ProgramClock_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
-            if (CommandList.Count() != 0)
-            {
-                Command currentCommand = CommandList.First();
-                CommandList.Remove(CommandList.First());
-                if (currentCommand.CommandString == "speak")
-                {
-                    speakOutput.Output(currentCommand.Arguments[0]);
-                }
-                else
-                {
-                    moveConnection.Output(currentCommand.ToString());
-                }
-            }
+            //moveConnection.Output(robotAI.Move().ToString());
+            moveConnection.Output(utraSoundLocation.HoldLeft(200, 230));
         }
 
-        private void MoveConnection_messageReceived(object sender, string s)
+        private void MoveConnection_messageReceived(object sender, string message)
         {
-            Console.WriteLine(s);
+            if (message.ToLower().Contains("m"))
+            {
+                utraSoundLocation.AddMesurement(message);
+            }
+            else if (message.ToLower().Contains("c"))
+            {
+                speakOutput.Output("test.mp3");
+                robotAI.Carefull = true;
+
+            }
+            else if (message.ToLower().Contains("s"))
+            {
+                speakOutput.Output("test.mp3");
+                robotAI.Stopped = true;
+
+            }
+            else if (message.ToLower().Contains("o")) 
+            {
+                robotAI.Stopped = false;
+                robotAI.Carefull = false;
+            }
         }
     }
 }
