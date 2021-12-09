@@ -18,7 +18,8 @@ namespace RondleidingRobotWPF
 
             Robot robot = new Robot(drawingCanvas);
             IOutput movementConnetion = new SimulationOutput(robot);
-            MoveModel model = new MoveModel(movementConnetion);
+            IOutput print = new PrintOutput();
+            MoveModel model = new MoveModel(movementConnetion, print);
         }
 
         

@@ -80,6 +80,11 @@ C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\Transdis
 C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\obj\Debug\netcoreapp3.1\RondleidingRobotWPF.genruntimeconfig.cache
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\RJCP.SerialPortStream.dll
 C:\Users\Robbe\Documents\3de jaar professionele bachelor ICT\Semester 1\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\RJCP.SerialPortStream.dll
+D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\LibVLCSharp.dll
+D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\lib\unix\x64\libManyMouse.so
+D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\lib\win\x64\libManyMouse.dll
+D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\lib\win\x86\libManyMouse.dll
+D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\ManyMouseSharp.dll
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\libvlc\win-x64\libvlc.dll
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\libvlc\win-x64\libvlc.lib
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\libvlc\win-x64\libvlccore.dll
@@ -1204,4 +1209,3 @@ D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\libvlc\win-x86\plugins\visualization\libgoom_plugin.dll
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\libvlc\win-x86\plugins\visualization\libprojectm_plugin.dll
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\libvlc\win-x86\plugins\visualization\libvisual_plugin.dll
-D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobotWPF\bin\Debug\netcoreapp3.1\LibVLCSharp.dll

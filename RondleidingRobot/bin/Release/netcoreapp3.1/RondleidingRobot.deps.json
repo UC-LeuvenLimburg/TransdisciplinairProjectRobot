@@ -9,6 +9,7 @@
       "RondleidingRobot/1.0.0": {
         "dependencies": {
           "LibVLCSharp": "3.6.1",
+          "ManyMouseSharp": "1.0.7",
           "SerialPortStream": "2.3.1",
           "VideoLAN.LibVLC.Windows": "3.0.16"
         },
@@ -21,6 +22,14 @@
           "lib/netstandard2.1/LibVLCSharp.dll": {
             "assemblyVersion": "3.6.1.0",
             "fileVersion": "3.6.1.0"
+          }
+        }
+      },
+      "ManyMouseSharp/1.0.7": {
+        "runtime": {
+          "lib/netstandard2.0/ManyMouseSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -401,6 +410,13 @@
       "sha512": "sha512-hnu8orUMMpEx7ZjECGnpR5K3ccLuvj7YXCmYoyLrV3XOcvW90NU7sgp0GQzOcl66iJtcavjOhkz/IMaPKRNe5w==",
       "path": "libvlcsharp/3.6.1",
       "hashPath": "libvlcsharp.3.6.1.nupkg.sha512"
+    },
+    "ManyMouseSharp/1.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kNELcMaJTXzFPmHEwPKD7jBqz0qXwWGuodXAEkkgTqaud9EelRUsUal1VnoiB65BQmoX97PxOKNK1ZjCBc5mKg==",
+      "path": "manymousesharp/1.0.7",
+      "hashPath": "manymousesharp.1.0.7.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

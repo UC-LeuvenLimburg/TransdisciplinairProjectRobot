@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "unJjIP45vt4RkGBzCqoNb+Vxow8yJPgLi6kOhpIVKjSmK/Plyf17Hb8oG3gs7c47VpmreodhWEic6HNmc8xflg==",
+  "dgSpecHash": "FwQUPDwJU284dWnkJyZ4daPb4zZNsYAHyAdn2Fbu/Q4etQ6BWsk+plG3qdJJSp7OCbpujd0a1HPJcECkIr8XLQ==",
   "success": true,
   "projectFilePath": "D:\\projects 2021\\RondleidingRobot\\RondleidingRobot\\TransdisciplinairProjectRobot\\RondleidingRobot\\RondleidingRobot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jorne\\.nuget\\packages\\libvlcsharp\\3.6.1\\libvlcsharp.3.6.1.nupkg.sha512",
+    "C:\\Users\\jorne\\.nuget\\packages\\manymousesharp\\1.0.7\\manymousesharp.1.0.7.nupkg.sha512",
     "C:\\Users\\jorne\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\jorne\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\jorne\\.nuget\\packages\\microsoft.win32.registry\\4.3.0\\microsoft.win32.registry.4.3.0.nupkg.sha512",

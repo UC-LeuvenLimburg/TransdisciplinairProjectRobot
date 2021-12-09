@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RondleidingRobot.Models
 {
-    class PrintOutput : IOutput
+    public class PrintOutput : IOutput
     {
         public event InputEvent inputEvent;
 

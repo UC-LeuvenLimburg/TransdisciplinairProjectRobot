@@ -1168,3 +1168,7 @@ D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\bin\Debug\netcoreapp3.1\libvlc\win-x86\plugins\visualization\libgoom_plugin.dll
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\bin\Debug\netcoreapp3.1\libvlc\win-x86\plugins\visualization\libprojectm_plugin.dll
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\bin\Debug\netcoreapp3.1\libvlc\win-x86\plugins\visualization\libvisual_plugin.dll
+D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\bin\Debug\netcoreapp3.1\lib\unix\x64\libManyMouse.so
+D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\bin\Debug\netcoreapp3.1\lib\win\x64\libManyMouse.dll
+D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\bin\Debug\netcoreapp3.1\lib\win\x86\libManyMouse.dll
+D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\RondleidingRobot\bin\Debug\netcoreapp3.1\ManyMouseSharp.dll
