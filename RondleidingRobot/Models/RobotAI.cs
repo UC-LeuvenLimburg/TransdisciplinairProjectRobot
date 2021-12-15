@@ -9,8 +9,8 @@ namespace RondleidingRobot.Models
     public delegate void AudioOutputEvent(object sender, string file);
     public class RobotAI
     {
-        private const int MAXSPEED = 255;
-        private const int SPEEDSTEP = 30;
+        private const int MAXSPEED = 100;
+        private const int SPEEDSTEP = 10;
 
         public bool Carefull { get; set; }
         public bool Stopped { get; set; }
@@ -19,11 +19,12 @@ namespace RondleidingRobot.Models
         private int distanceToGo;
         private int listIndex;
         private List<Command> commandList;
-
+        private UltraSoundLocation ultraSoundLocation;
         public AudioOutputEvent audioOutputEvent;
 
-        public RobotAI() 
+        public RobotAI(UltraSoundLocation ultraSoundLocation) 
         {
+            this.ultraSoundLocation = ultraSoundLocation;
             commandList = new List<Command>();
             List<string> commands = FileHelper.ReadMovement();
             foreach (string command in commands)
@@ -37,44 +38,41 @@ namespace RondleidingRobot.Models
             Stopped = false;
         }
 
-        public Command Move() 
+        public string Move() 
         {
-            if (Stopped) return new Command("A", Convert.ToString(SPEEDSTEP));
+            if (Stopped) return ("A:" + Convert.ToString(SPEEDSTEP));
             if (distanceToGo < 0)
             {
                 listIndex++;
                 if (listIndex >= commandList.Count) listIndex = 0;
-                try
-                {
-                    distanceToGo = Convert.ToInt16(commandList[listIndex].Arguments[0]);
-                }
-                catch 
-                {
-                    distanceToGo = 0;
-                }
-
+                distanceToGo = commandList[listIndex].DistanceTo;
             }
             if (CheckIfSpecialOutput(commandList[listIndex]))
             {
                 speed = 0;
                 distanceToGo--;
-                return new Command("X", "0");
+                return "X:0";
             }
             if (speed >= distanceToGo * SPEEDSTEP) speed -= SPEEDSTEP;
             else speed += SPEEDSTEP;
-            speed += (SPEEDSTEP - speed % SPEEDSTEP)%SPEEDSTEP;
+            speed += (SPEEDSTEP - speed % SPEEDSTEP) % SPEEDSTEP;
             if (speed > MAXSPEED) speed = MAXSPEED;
             else if (speed < 0) speed = 0;
             distanceToGo--;
             if (commandList[listIndex].CommandString == "X") speed = 0;
-            return new Command(commandList[listIndex].CommandString, Convert.ToString(speed));
+            if (commandList[listIndex].Holding == false && commandList[listIndex].GoingTo == false) return commandList[listIndex].CommandString + ":" + Convert.ToString(speed); 
+            if (commandList[listIndex].GoingTo) distanceToGo = ultraSoundLocation.StraightDistance - commandList[listIndex].DistanceTo;
+            if (commandList[listIndex].CommandString == "A") return ultraSoundLocation.HoldLeft(commandList[listIndex].SideDistance, speed);
+            if (commandList[listIndex].CommandString == "D") return ultraSoundLocation.HoldRight(commandList[listIndex].SideDistance, speed);
+            if (commandList[listIndex].CommandString == "W") return ultraSoundLocation.HoldStraight(speed);
+            return "X:0";
         }
 
         private bool CheckIfSpecialOutput(Command commandListItem) 
         {
             if (commandListItem.CommandString == "SPEAK") 
             {
-                audioOutputEvent.Invoke(this, commandListItem.Arguments[0]);
+                audioOutputEvent.Invoke(this, commandListItem.SoundFile);
                 return true;
             }
             return false;

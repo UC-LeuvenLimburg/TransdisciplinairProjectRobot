@@ -10,6 +10,7 @@ namespace RondleidingRobot.Models
         private UltraSoundSideSensor leftSensor;
         private UltraSoundSideSensor rightSensor;
 
+        public int StraightDistance { get; set; }
         public UltraSoundLocation() 
         {
             leftSensor = new UltraSoundSideSensor(30, 5);
@@ -34,6 +35,11 @@ namespace RondleidingRobot.Models
             if (leftmotor < 0) leftmotor = 0;
             if (rightmotor < 0) leftmotor = 0;
             return "W:" + leftmotor + ":" + rightmotor;
+        }
+
+        public string HoldStraight(int speed)
+        {
+            return "W:" + speed;
         }
 
         public void AddMesurement(string input) 
