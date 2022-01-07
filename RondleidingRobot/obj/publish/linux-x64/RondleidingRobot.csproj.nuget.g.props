@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\jorne\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages;C:\Program Files (x86)\Microsoft\Xamarin\NuGet\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.11.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\jorne\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft\Xamarin\NuGet\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)manymousesharp\1.0.7\contentFiles\any\any\lib\unix\x64\libManyMouse.so" Condition="Exists('$(NuGetPackageRoot)manymousesharp\1.0.7\contentFiles\any\any\lib\unix\x64\libManyMouse.so')">
+      <NuGetPackageId>ManyMouseSharp</NuGetPackageId>
+      <NuGetPackageVersion>1.0.7</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>lib\unix\x64\libManyMouse.so</TargetPath>
+      <DestinationSubDirectory>lib\unix\x64\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>lib\unix\x64\libManyMouse.so</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)manymousesharp\1.0.7\contentFiles\any\any\lib\win\x64\libManyMouse.dll" Condition="Exists('$(NuGetPackageRoot)manymousesharp\1.0.7\contentFiles\any\any\lib\win\x64\libManyMouse.dll')">
+      <NuGetPackageId>ManyMouseSharp</NuGetPackageId>
+      <NuGetPackageVersion>1.0.7</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>lib\win\x64\libManyMouse.dll</TargetPath>
+      <DestinationSubDirectory>lib\win\x64\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>lib\win\x64\libManyMouse.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)manymousesharp\1.0.7\contentFiles\any\any\lib\win\x86\libManyMouse.dll" Condition="Exists('$(NuGetPackageRoot)manymousesharp\1.0.7\contentFiles\any\any\lib\win\x86\libManyMouse.dll')">
+      <NuGetPackageId>ManyMouseSharp</NuGetPackageId>
+      <NuGetPackageVersion>1.0.7</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>lib\win\x86\libManyMouse.dll</TargetPath>
+      <DestinationSubDirectory>lib\win\x86\</DestinationSubDirectory>
+      <Private>True</Private>
+      <Link>lib\win\x86\libManyMouse.dll</Link>
+    </Content>
+  </ItemGroup>
+</Project>
