@@ -4,6 +4,7 @@ using System.Text;
 
 namespace RondleidingRobot.Models
 {
+    //een linear function is een lineare funtie waar we kijken of we verder of dichter naar bevoorbeeld een muur gaan en kijken we of een punt te ver uitschiet om bijvoorbeeld een tafelpoot te kunnen negeren.
     public class LinearFunction
     {
         private double yintercept;

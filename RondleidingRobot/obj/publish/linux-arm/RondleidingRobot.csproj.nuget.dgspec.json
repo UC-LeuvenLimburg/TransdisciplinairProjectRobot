@@ -48,11 +48,7 @@
           "dependencies": {
             "LibVLCSharp": {
               "target": "Package",
-              "version": "[3.6.1, )"
-            },
-            "ManyMouseSharp": {
-              "target": "Package",
-              "version": "[1.0.7, )"
+              "version": "[3.6.4, )"
             },
             "SerialPortStream": {
               "target": "Package",
@@ -76,15 +72,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-              "version": "[3.1.21, 3.1.21]"
+              "version": "[3.1.22, 3.1.22]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.linux-arm",
-              "version": "[3.1.21, 3.1.21]"
+              "version": "[3.1.22, 3.1.22]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.linux-arm",
-              "version": "[3.1.21, 3.1.21]"
+              "version": "[3.1.22, 3.1.22]"
             }
           ],
           "frameworkReferences": {
@@ -92,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

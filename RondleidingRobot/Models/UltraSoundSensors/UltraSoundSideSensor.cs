@@ -21,14 +21,17 @@ namespace RondleidingRobot.Models
             oudliarSensorValues = new double[bufferLengt];
         }
 
+        //om een waarde toe te voegen kijken we of het getal niet een te grote sprong maak en corrigeren we dan
         public bool AddValue(double value) 
-        {
+        {   
+            //als er nog geen functie is berkent berekenen we een nieuwe functie
             double[] newArray;
             if (function == null)
             {
                 for (int i = 0; i < sensorValues.Length; i++) { sensorValues[i] = value; }
                 function = LinearRegression();
             }
+            //dan kijken we of een punt een te grote sprong maakt
             if (function.CheckIfOutliar(calculateY(value), 40))
             {
                 if (numberOfOudliars == 0)
@@ -43,7 +46,8 @@ namespace RondleidingRobot.Models
                     oudliarSensorValues[oudliarSensorValues.Length - 1] = value;
                 }
                 numberOfOudliars++;
-                if (numberOfOudliars >= 3)
+                //wanneer er een paar punten na elkaar niet passen gaan we er vanuit dat we niet een tafelpoot hebben maar de muur heel snel dichter is gekomen dus gaan we de lijst met waardes aanpassen.
+                if (numberOfOudliars >= 2)
                 {
                     sensorValues = oudliarSensorValues;
                     function = LinearRegression();
@@ -60,11 +64,13 @@ namespace RondleidingRobot.Models
             return true;
         }
 
+        //deze functie probeert een muur te volgen en te corrigeren als we dichter of verder komen
         public int HoldDistance(int distance) 
         {
             if (function == null) function = LinearRegression();
-            if (sensorValues.Average() > distance + MARGIN && function.Slope <= 0) return -30;
-            if (sensorValues.Average() < distance - MARGIN && function.Slope >= 0) return 30;
+            Console.WriteLine(sensorValues);
+            if (sensorValues.Average() > distance + MARGIN && function.Slope <= 0) return -10;
+            if (sensorValues.Average() < distance - MARGIN && function.Slope >= 0) return 10;
             return 0;
         }
 
@@ -73,7 +79,7 @@ namespace RondleidingRobot.Models
             return Convert.ToInt32(distance * Math.Sin(angle));
         }
 
-
+        //deze functie doet gewoon een lineare regressie van een lijst van punten
         private LinearFunction LinearRegression()
         {
             double sumOfX = 0;

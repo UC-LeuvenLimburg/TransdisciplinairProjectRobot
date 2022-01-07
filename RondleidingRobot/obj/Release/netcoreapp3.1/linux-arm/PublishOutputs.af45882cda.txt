@@ -1,7 +1,4 @@
 D:\publishLinux\RondleidingRobot
-D:\publishLinux\lib\unix\x64\libManyMouse.so
-D:\publishLinux\lib\win\x64\libManyMouse.dll
-D:\publishLinux\lib\win\x86\libManyMouse.dll
 D:\publishLinux\libvlc\win-x64\libvlc.dll
 D:\publishLinux\libvlc\win-x64\libvlc.lib
 D:\publishLinux\libvlc\win-x64\libvlccore.dll
@@ -1317,5 +1314,4 @@ D:\publishLinux\libhostpolicy.so
 D:\publishLinux\libmscordaccore.so
 D:\publishLinux\libmscordbi.so
 D:\publishLinux\LibVLCSharp.dll
-D:\publishLinux\ManyMouseSharp.dll
 D:\publishLinux\RJCP.SerialPortStream.dll

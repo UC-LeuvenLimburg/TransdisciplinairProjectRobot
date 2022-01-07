@@ -1,9 +1,6 @@
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\SensorTest\bin\Debug\netcoreapp3.1\RondleidingRobot.deps.json
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\SensorTest\bin\Debug\netcoreapp3.1\RondleidingRobot.runtimeconfig.json
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\SensorTest\bin\Debug\netcoreapp3.1\RondleidingRobot.runtimeconfig.dev.json
-D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\SensorTest\bin\Debug\netcoreapp3.1\lib\unix\x64\libManyMouse.so
-D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\SensorTest\bin\Debug\netcoreapp3.1\lib\win\x64\libManyMouse.dll
-D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\SensorTest\bin\Debug\netcoreapp3.1\lib\win\x86\libManyMouse.dll
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\SensorTest\bin\Debug\netcoreapp3.1\RondleidingRobot.exe
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\SensorTest\bin\Debug\netcoreapp3.1\SensorTest.exe
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\SensorTest\bin\Debug\netcoreapp3.1\SensorTest.deps.json
@@ -12,7 +9,6 @@ D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\SensorTest\bin\Debug\netcoreapp3.1\SensorTest.dll
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\SensorTest\bin\Debug\netcoreapp3.1\SensorTest.pdb
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\SensorTest\bin\Debug\netcoreapp3.1\LibVLCSharp.dll
-D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\SensorTest\bin\Debug\netcoreapp3.1\ManyMouseSharp.dll
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\SensorTest\bin\Debug\netcoreapp3.1\RJCP.SerialPortStream.dll
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\SensorTest\bin\Debug\netcoreapp3.1\RondleidingRobot.dll
 D:\projects 2021\RondleidingRobot\RondleidingRobot\TransdisciplinairProjectRobot\SensorTest\bin\Debug\netcoreapp3.1\RondleidingRobot.pdb
