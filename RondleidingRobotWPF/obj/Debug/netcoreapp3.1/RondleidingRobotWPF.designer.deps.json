@@ -6,19 +6,11 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "LibVLCSharp/3.6.1": {
+      "LibVLCSharp/3.6.4": {
         "runtime": {
           "lib/netstandard2.1/LibVLCSharp.dll": {
-            "assemblyVersion": "3.6.1.0",
-            "fileVersion": "3.6.1.0"
-          }
-        }
-      },
-      "ManyMouseSharp/1.0.7": {
-        "runtime": {
-          "lib/netstandard2.0/ManyMouseSharp.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "3.6.4.0",
+            "fileVersion": "3.6.4.0"
           }
         }
       },
@@ -552,19 +544,12 @@
     }
   },
   "libraries": {
-    "LibVLCSharp/3.6.1": {
+    "LibVLCSharp/3.6.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hnu8orUMMpEx7ZjECGnpR5K3ccLuvj7YXCmYoyLrV3XOcvW90NU7sgp0GQzOcl66iJtcavjOhkz/IMaPKRNe5w==",
-      "path": "libvlcsharp/3.6.1",
-      "hashPath": "libvlcsharp.3.6.1.nupkg.sha512"
-    },
-    "ManyMouseSharp/1.0.7": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-kNELcMaJTXzFPmHEwPKD7jBqz0qXwWGuodXAEkkgTqaud9EelRUsUal1VnoiB65BQmoX97PxOKNK1ZjCBc5mKg==",
-      "path": "manymousesharp/1.0.7",
-      "hashPath": "manymousesharp.1.0.7.nupkg.sha512"
+      "sha512": "sha512-Zij/bZ2dyEU3GTE7cztL2tC2dNTjKKzb09vhEe+VcUwWerSl3jmi6oC1gDjoSo0zCW0qfzMpDOYfFJ8k3HcfuQ==",
+      "path": "libvlcsharp/3.6.4",
+      "hashPath": "libvlcsharp.3.6.4.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

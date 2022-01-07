@@ -5,8 +5,10 @@ using System.Text;
 
 namespace RondleidingRobot.Models
 {
+    //De filehelper klasse helpt met het openen van een txt file en om gemakkelijk alle bestanden uit 1 map te halen.
     abstract class FileHelper
     {
+        //de read movement functie diend er voor om alle bewegingen uit een textbestand te halen
         public static List<string> ReadMovement()
         {
             string beweging;
@@ -30,7 +32,7 @@ namespace RondleidingRobot.Models
             return movementList;
         }
 
-
+        //de get filestring functie zorgt dat we alle bestanden uit de map RondleidingRobot kunnen halen, in deze map staan dus alle text en geluidsbestanden.
         public static string getFileString(string fileName)
         {
             string folderPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),"RondleidingRobot");

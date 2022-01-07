@@ -2,42 +2,13 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "LibVLCSharp/3.6.1": {
+      "LibVLCSharp/3.6.4": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/LibVLCSharp.dll": {}
         },
         "runtime": {
           "lib/netstandard2.1/LibVLCSharp.dll": {}
-        }
-      },
-      "ManyMouseSharp/1.0.7": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/ManyMouseSharp.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/ManyMouseSharp.dll": {}
-        },
-        "contentFiles": {
-          "contentFiles/any/any/lib/unix/x64/libManyMouse.so": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": true,
-            "outputPath": "lib/unix/x64/libManyMouse.so"
-          },
-          "contentFiles/any/any/lib/win/x64/libManyMouse.dll": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": true,
-            "outputPath": "lib/win/x64/libManyMouse.dll"
-          },
-          "contentFiles/any/any/lib/win/x86/libManyMouse.dll": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": true,
-            "outputPath": "lib/win/x86/libManyMouse.dll"
-          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -685,10 +656,10 @@
     }
   },
   "libraries": {
-    "LibVLCSharp/3.6.1": {
-      "sha512": "hnu8orUMMpEx7ZjECGnpR5K3ccLuvj7YXCmYoyLrV3XOcvW90NU7sgp0GQzOcl66iJtcavjOhkz/IMaPKRNe5w==",
+    "LibVLCSharp/3.6.4": {
+      "sha512": "Zij/bZ2dyEU3GTE7cztL2tC2dNTjKKzb09vhEe+VcUwWerSl3jmi6oC1gDjoSo0zCW0qfzMpDOYfFJ8k3HcfuQ==",
       "type": "package",
-      "path": "libvlcsharp/3.6.1",
+      "path": "libvlcsharp/3.6.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -701,48 +672,35 @@
         "lib/net40/LibVLCSharp.xml",
         "lib/net471/LibVLCSharp.dll",
         "lib/net471/LibVLCSharp.xml",
+        "lib/net6.0-android31.0/LibVLCSharp.Android.AWindow.dll",
+        "lib/net6.0-android31.0/LibVLCSharp.dll",
+        "lib/net6.0-android31.0/LibVLCSharp.xml",
+        "lib/net6.0-ios15.0/LibVLCSharp.dll",
+        "lib/net6.0-ios15.0/LibVLCSharp.xml",
+        "lib/net6.0-macos12.0/LibVLCSharp.dll",
+        "lib/net6.0-macos12.0/LibVLCSharp.xml",
+        "lib/net6.0-tvos15.0/LibVLCSharp.dll",
+        "lib/net6.0-tvos15.0/LibVLCSharp.xml",
+        "lib/net6.0-windows7.0/LibVLCSharp.dll",
+        "lib/net6.0-windows7.0/LibVLCSharp.xml",
+        "lib/net6.0/LibVLCSharp.dll",
+        "lib/net6.0/LibVLCSharp.xml",
         "lib/netstandard1.1/LibVLCSharp.dll",
         "lib/netstandard1.1/LibVLCSharp.xml",
         "lib/netstandard2.0/LibVLCSharp.dll",
         "lib/netstandard2.0/LibVLCSharp.xml",
         "lib/netstandard2.1/LibVLCSharp.dll",
         "lib/netstandard2.1/LibVLCSharp.xml",
-        "lib/uap10.0.15063/LibVLCSharp.dll",
-        "lib/uap10.0.15063/LibVLCSharp.pri",
-        "lib/uap10.0.15063/LibVLCSharp.xml",
-        "lib/uap10.0.16299/LibVLCSharp.dll",
-        "lib/uap10.0.16299/LibVLCSharp.pri",
-        "lib/uap10.0.16299/LibVLCSharp.xml",
-        "lib/uap10.0.16299/LibVLCSharp/LibVLCSharp.xr.xml",
-        "lib/uap10.0/LibVLCSharp/LibVLCSharp.xr.xml",
+        "lib/uap10.0.18362/LibVLCSharp.dll",
+        "lib/uap10.0.18362/LibVLCSharp.pri",
+        "lib/uap10.0.18362/LibVLCSharp.xml",
+        "lib/uap10.0.18362/LibVLCSharp/LibVLCSharp.xr.xml",
         "lib/xamarinios10/LibVLCSharp.dll",
         "lib/xamarinios10/LibVLCSharp.xml",
         "lib/xamarinmac20/LibVLCSharp.dll",
         "lib/xamarinmac20/LibVLCSharp.xml",
-        "lib/xamarintvos10/LibVLCSharp.dll",
-        "lib/xamarintvos10/LibVLCSharp.xml",
-        "libvlcsharp.3.6.1.nupkg.sha512",
+        "libvlcsharp.3.6.4.nupkg.sha512",
         "libvlcsharp.nuspec"
-      ]
-    },
-    "ManyMouseSharp/1.0.7": {
-      "sha512": "kNELcMaJTXzFPmHEwPKD7jBqz0qXwWGuodXAEkkgTqaud9EelRUsUal1VnoiB65BQmoX97PxOKNK1ZjCBc5mKg==",
-      "type": "package",
-      "path": "manymousesharp/1.0.7",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "contentFiles/any/any/lib/unix/x64/libManyMouse.so",
-        "contentFiles/any/any/lib/win/x64/libManyMouse.dll",
-        "contentFiles/any/any/lib/win/x86/libManyMouse.dll",
-        "lib/netstandard2.0/ManyMouseSharp.deps.json",
-        "lib/netstandard2.0/ManyMouseSharp.dll",
-        "lib/netstandard2.0/ManyMouseSharp.pdb",
-        "lib/netstandard2.0/lib/unix/x64/libManyMouse.so",
-        "lib/netstandard2.0/lib/win/x64/libManyMouse.dll",
-        "lib/netstandard2.0/lib/win/x86/libManyMouse.dll",
-        "manymousesharp.1.0.7.nupkg.sha512",
-        "manymousesharp.nuspec"
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
@@ -4126,8 +4084,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "LibVLCSharp >= 3.6.1",
-      "ManyMouseSharp >= 1.0.7",
+      "LibVLCSharp >= 3.6.4",
       "SerialPortStream >= 2.3.1",
       "VideoLAN.LibVLC.Windows >= 3.0.16"
     ]
@@ -4181,11 +4138,7 @@
         "dependencies": {
           "LibVLCSharp": {
             "target": "Package",
-            "version": "[3.6.1, )"
-          },
-          "ManyMouseSharp": {
-            "target": "Package",
-            "version": "[1.0.7, )"
+            "version": "[3.6.4, )"
           },
           "SerialPortStream": {
             "target": "Package",
@@ -4211,7 +4164,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

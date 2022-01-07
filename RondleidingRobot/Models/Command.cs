@@ -5,6 +5,7 @@ using System.Text;
 
 namespace RondleidingRobot.Models
 {
+    //Een command is een beweging of een opdracht van iets wat de robot moet zeggen.
     public class Command
     {
         public string CommandString { get; set; }
@@ -18,6 +19,8 @@ namespace RondleidingRobot.Models
             CommandString = "";
         }
 
+        //als we een Command willen aanmaken vanuit het textbestand moeten we het commando eerst decoderen zodat het programma weet wat hij precies moet doen.
+        //we kijken of we een muur moeten aanhouden, of we moeten gaan tot een bepaalde hoek en of we moeten rijden tot aan een maar.
         public Command(string command) 
         {
             command = command.ToLower();
@@ -36,7 +39,7 @@ namespace RondleidingRobot.Models
             {
                 string[] x = collums[0].Split(' ');
                 collums[0] = x[0];
-                SideDistance = Convert.ToInt32(x[1]);
+                if(x[0] != "vooruit") SideDistance = Convert.ToInt32(x[1]);
             }
             switch (collums[0].ToLower())
             {

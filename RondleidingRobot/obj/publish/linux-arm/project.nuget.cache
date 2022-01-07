@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rHsb9ikLD5brQ3ooCVApW8VDlPrm7IKBdBhVIXuh7pO5zdUCt8G3YeeN/pFlifxU4nz0Gxf+wBFxZyen6Ofv6Q==",
+  "dgSpecHash": "arliW+0NKMQWzL9hoDf8pPVqjz7a78A+cG2h89f47cT1Sbz+E/gPOUa7k/hRnzhkUQxapDGKCzqmiXbO+P8qoQ==",
   "success": true,
   "projectFilePath": "D:\\projects 2021\\RondleidingRobot\\RondleidingRobot\\TransdisciplinairProjectRobot\\RondleidingRobot\\RondleidingRobot.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jorne\\.nuget\\packages\\libvlcsharp\\3.6.1\\libvlcsharp.3.6.1.nupkg.sha512",
-    "C:\\Users\\jorne\\.nuget\\packages\\manymousesharp\\1.0.7\\manymousesharp.1.0.7.nupkg.sha512",
+    "C:\\Users\\jorne\\.nuget\\packages\\libvlcsharp\\3.6.4\\libvlcsharp.3.6.4.nupkg.sha512",
     "C:\\Users\\jorne\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\jorne\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\jorne\\.nuget\\packages\\microsoft.win32.registry\\4.3.0\\microsoft.win32.registry.4.3.0.nupkg.sha512",
@@ -78,9 +77,9 @@
     "C:\\Users\\jorne\\.nuget\\packages\\system.threading.thread\\4.3.0\\system.threading.thread.4.3.0.nupkg.sha512",
     "C:\\Users\\jorne\\.nuget\\packages\\system.threading.threadpool\\4.3.0\\system.threading.threadpool.4.3.0.nupkg.sha512",
     "C:\\Users\\jorne\\.nuget\\packages\\videolan.libvlc.windows\\3.0.16\\videolan.libvlc.windows.3.0.16.nupkg.sha512",
-    "C:\\Users\\jorne\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-arm\\3.1.21\\microsoft.netcore.app.runtime.linux-arm.3.1.21.nupkg.sha512",
-    "C:\\Users\\jorne\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-arm\\3.1.21\\microsoft.aspnetcore.app.runtime.linux-arm.3.1.21.nupkg.sha512",
-    "C:\\Users\\jorne\\.nuget\\packages\\microsoft.netcore.app.host.linux-arm\\3.1.21\\microsoft.netcore.app.host.linux-arm.3.1.21.nupkg.sha512"
+    "C:\\Users\\jorne\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-arm\\3.1.22\\microsoft.netcore.app.runtime.linux-arm.3.1.22.nupkg.sha512",
+    "C:\\Users\\jorne\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-arm\\3.1.22\\microsoft.aspnetcore.app.runtime.linux-arm.3.1.22.nupkg.sha512",
+    "C:\\Users\\jorne\\.nuget\\packages\\microsoft.netcore.app.host.linux-arm\\3.1.22\\microsoft.netcore.app.host.linux-arm.3.1.22.nupkg.sha512"
   ],
   "logs": []
 }
